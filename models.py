@@ -75,7 +75,7 @@ class Contact(models.Model):
 
 
 class Product(models.Model):
-    product_name = models.CharField(max_length=33)
+    product_name = models.CharField(max_length=33)   
     description = models.TextField()
     product_image = models.ImageField(upload_to='product_images')
     price = models.DecimalField(max_digits=10, decimal_places=2)
