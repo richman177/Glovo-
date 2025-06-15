@@ -4,7 +4,7 @@ from phonenumber_field.modelfields import PhoneNumberField
 from django.core.validators import MinValueValidator, MaxValueValidator
 
 
-class UserProfile(AbstractUser):
+class UserProfile(AbstractUser):   
     phone_number = PhoneNumberField(null=True, blank=True)
     profile_image = models.ImageField(upload_to='profiles')
     age = models.PositiveSmallIntegerField(validators=[MinValueValidator(18), MaxValueValidator(65)], null=True, blank=True)
