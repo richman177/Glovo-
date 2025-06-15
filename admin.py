@@ -4,7 +4,7 @@ from modeltranslation.admin import TranslationAdmin
 
 
 @admin.register(Category, Store, Contact, Combo, Product)
-class AllAdmin(TranslationAdmin):
+class AllAdmin(TranslationAdmin):   
     class Media:
         js = (
             'http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js',
