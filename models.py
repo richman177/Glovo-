@@ -13,7 +13,7 @@ class UserProfile(AbstractUser):
         ('courier', 'Courier'),
         ('owner', 'Owner'),
     )
-    status = models.CharField(max_length=33, choices=STATUS_CHOICES, default='client')
+    status = models.CharField(max_length=33, choices=STATUS_CHOICES, default='client') 
     date_registered = models.DateTimeField(auto_now_add=True)
  
     def __str__(self):
