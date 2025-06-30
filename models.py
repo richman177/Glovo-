@@ -15,7 +15,7 @@ class UserProfile(AbstractUser):
     )
     status = models.CharField(max_length=33, choices=STATUS_CHOICES, default='client')
     date_registered = models.DateTimeField(auto_now_add=True)
-
+ 
     def __str__(self):
         return f'{self.first_name}, {self.last_name}, {self.username}'
 
