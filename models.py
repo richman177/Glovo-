@@ -10,7 +10,7 @@ class UserProfile(AbstractUser):
     age = models.PositiveSmallIntegerField(validators=[MinValueValidator(18), MaxValueValidator(65)], null=True, blank=True)
     STATUS_CHOICES = (
         ('client', 'Client'),
-        ('courier', 'Courier'),
+        ('courier', 'Courier'), 
         ('owner', 'Owner'),
     )
     status = models.CharField(max_length=33, choices=STATUS_CHOICES, default='client') 
