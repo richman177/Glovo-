@@ -28,7 +28,7 @@ class Category(models.Model):
 
 
 class Store(models.Model):
-    store_name = models.CharField(max_length=55)
+    store_name = models.CharField(max_length=55) 
     category = models.ForeignKey(Category, on_delete=models.CASCADE, related_name='category_store')
     description = models.TextField()
     store_image = models.ImageField(upload_to='store_images')
