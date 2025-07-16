@@ -36,7 +36,7 @@ class Store(models.Model):
     owner = models.ForeignKey(UserProfile, on_delete=models.CASCADE, related_name='client' )
 
     def __str__(self):
-        return f'{self.store_name}'
+        return f'{self.store_name}' 
 
 
     def get_avg_rating(self):
